@@ -38,8 +38,8 @@ public class Main {
         - Outer loop would exits when we would find all N prime numbers and arrIndex would reach to N.
 
             ****************************************************************************************************************************************
-             Time complexity - O( K * SquareRoot(N)), where K can be any number which get incremented till  we find all N prime numbers.
-                                                           N is as per input
+             Time complexity - O( K * Z), where K can be any number which get incremented till  we find all N prime numbers.
+                                                Z = maximum of m, such than arr[m] <= SquareRoot(i)
              Space complexity - O(N)
        */
 
@@ -50,7 +50,7 @@ public class Main {
             int previousQuotient  = i;
             boolean isNonPrime = false;
 
-            // O(Square root of arrIndex)
+            // O(Z), where Z = maximum of m, such than arr[m] <= SquareRoot(i)
             for (int m = 0; m < arrIndex && previousQuotient > arr[m]; m++) {
                 if (i % arr[m] == 0) {
                     isNonPrime = true;

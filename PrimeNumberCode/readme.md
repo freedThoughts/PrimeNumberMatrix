@@ -18,6 +18,6 @@
 ***********************************************************************************************************************************************
 
 # Complexity 
-             - Time complexity - O( K * SquareRoot(N)), where K can be any number which get incremented till  we find all N prime numbers.
-                                                           N is as per input.
+             - Time complexity - O( K * Z), where K can be any number which get incremented till  we find all N prime numbers.
+                                                               Z = maximum of m, such than arr[m] <= SquareRoot(i)
              - Space complexity - O(N)
