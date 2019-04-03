@@ -3,7 +3,7 @@ package com.mitti.primeNumberCode;
 public class Main {
 
     public static void main(String[] args) {
-        int N = 10; // As per input
+        int N = 100; // As per input
 
 
         if (N == 0) return;
@@ -26,7 +26,6 @@ public class Main {
 
 
     /*
-
     Saving the prime numbers in Array arr.
     For every new number, i,  to test if prime,
         - We are only considering the prime numbers found till the time in array, arr.
@@ -38,8 +37,11 @@ public class Main {
                 - We would reach to the point in arr, where previousQuotient is less than arr[m]. This number i, found as prime number.
         - Outer loop would exits when we would find all N prime numbers and arrIndex would reach to N.
 
-
-    */
+            ****************************************************************************************************************************************
+             Time complexity - O( K * SquareRoot(N)), where K can be any number which get incremented till  we find all N prime numbers.
+                                                           N is as per input
+             Space complexity - O(N)
+       */
 
     void getPrimeNumbers(int N, int[] arr) {
         if (N == 1) return;
@@ -48,8 +50,8 @@ public class Main {
             int previousQuotient  = i;
             boolean isNonPrime = false;
 
-            for (int m = 0; m < arrIndex; m++) {
-                if (previousQuotient  < arr[m]) break;
+            // O(Square root of arrIndex)
+            for (int m = 0; m < arrIndex && previousQuotient > arr[m]; m++) {
                 if (i % arr[m] == 0) {
                     isNonPrime = true;
                     break;
