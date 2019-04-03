@@ -1,8 +1,5 @@
-Write​ ​a​ ​program​ ​that​ ​prints​ ​out​ ​a​ ​multiplication​ ​table​ ​of​ ​the​ ​first​ ​N ​prime​ ​number.
-		The​ ​first​ ​row​ ​and​ ​column​ ​of​ ​the​ ​table​ ​should​ ​have​ ​the​ ​N ​primes,​ ​with​ ​each
-cell​ ​containing​ ​the​ ​product​ ​of​ ​the​ ​primes​ ​for​ ​the​ ​corresponding​ ​row​ ​and
-column.
-
+Problem :- Write​ ​a​ ​program​ ​that​ ​prints​ ​out​ ​a​ ​multiplication​ ​table​ ​of​ ​the​ ​first​ ​N ​prime​ ​number.
+		The​ ​first​ ​row​ ​and​ ​column​ ​of​ ​the​ ​table​ ​should​ ​have​ ​the​ ​N ​primes,​ ​with​ ​each cell​ ​containing​ ​the​ ​product​ ​of​ ​the​ ​primes​ ​for​ ​the​ ​corresponding​ ​row​ ​and column.
 
 Description of function :-
     Saving the prime numbers in Array arr.
@@ -15,9 +12,7 @@ Description of function :-
                 - We would find i as non prime. Setting variable isNonPrime as true and exit from loop
                 - We would reach to the point in arr, where previousQuotient is less than arr[m]. This number i, found as prime number.
         - Outer loop would exits when we would find all N prime numbers and arrIndex would reach to N.
-
-
-		
+	
 Complexity :-
              Time complexity - O( K * SquareRoot(N)), where K can be any number which get incremented till  we find all N prime numbers.
                                                            N is as per input
