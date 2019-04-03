@@ -40,6 +40,7 @@ public class Main {
             ****************************************************************************************************************************************
              Time complexity - O( K * Z), where K can be any number which get incremented till  we find all N prime numbers.
                                                 Z = maximum of m, such than arr[m] <= SquareRoot(i)
+                                                m ranges from 0 to N-1
              Space complexity - O(N)
        */
 
